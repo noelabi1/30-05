@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #eee;
+      padding: 20px;
+    }
+
+    .calculator {
+      width: 220px;
+      background-color: gray;
+      padding: 10px;
+      box-shadow: 5px 5px 5px #888;
+    }
+
+    .display {
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: right;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .button {
+      width: 50px;
+      height: 40px;
+      margin: 3px;
+      background-color: #3dd;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <input type="text" class="display" id="result" value="0" readonly>
+
+  <div class="button-row">
+    <button class="button">C</button>
+    <button class="button">%</button>
+    <button class="button">&larr;</button>
+    <button class="button">/</button>
+  </div>
+  <div class="button-row">
+    <button class="button">7</button>
+    <button class="button">8</button>
+    <button class="button">9</button>
+    <button class="button">*</button>
+  </div>
+  <div class="button-row">
+    <button class="button">4</button>
+    <button class="button">5</button>
+    <button class="button">6</button>
+    <button class="button">-</button>
+  </div>
+  <div class="button-row">
+    <button class="button">1</button>
+    <button class="button">2</button>
+    <button class="button">3</button>
+    <button class="button">+</button>
+  </div>
+  <div class="button-row">
+    <button class="button">00</button>
+    <button class="button">0</button>
+    <button class="button">.</button>
+    <button class="button">=</button>
+  </div>
+</div>
+
+</body>
+</html>

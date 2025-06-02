@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: #f0f0f0;
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background: linear-gradient(green, lightgreen);
+      float: left;
+      color: white;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.2);
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      background: rgba(255,255,255,0.4);
+    }
+
+    .main {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    .main h1 {
+      color: green;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      width: 200px;
+      height: 100px;
+      background: white;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 2px 2px 5px grey;
+    }
+
+    .card img {
+      width: 30px;
+      float: right;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .card p {
+      font-size: 20px;
+      color: green;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>School Dashboard</h2>
+  <ul>
+    <li>Dashboard</li>
+    <li>Students</li>
+    <li>Teachers</li>
+    <li>Classes</li>
+    <li>Exams</li>
+    <li>Library</li>
+    <li>Settings</li>
+  </ul>
+</div>
+
+<div class="main">
+  <h1>Welcome to Dashboard</h1>
+  <div class="cards">
+    <div class="card">
+      <h3>Total Students</h3>
+      <p>500</p>
+    </div>
+    <div class="card">
+      <h3>Total Teachers</h3>
+      <p>50</p>
+    </div>
+    <div class="card">
+      <h3>Classes</h3>
+      <p>20</p>
+    </div>
+    <div class="card">
+      <h3>Upcoming Exams</h3>
+      <p>5</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
